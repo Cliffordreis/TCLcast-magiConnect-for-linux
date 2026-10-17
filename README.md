@@ -17,8 +17,6 @@ GUI em **Python + PySide6**. Análise e spec em [`SPEC.md`](SPEC.md).
 ## O que faz
 
 - **Descoberta de TVs** — protocolo proprietário TCL (UDP 6537) + DLNA/UPnP (SSDP).
-- **Layout com ícones** — todos os botões têm ícones SVG próprios (remoto,
-  player, ferramentas) num tema escuro moderno.
 - **Controle remoto** — direcional, OK, volume, mudo, canais, power (com
   confirmação), source, teclas de cor, **menu rápido da TV** (☰ brilho/imagem/som).
 - **Reconexão automática** — guarda o último IP e reconecta sozinho ao abrir;
@@ -35,12 +33,7 @@ GUI em **Python + PySide6**. Análise e spec em [`SPEC.md`](SPEC.md).
   **desinstalar** com confirmação, + armazenamento da TV.
 - **Captura de tela** — salva em `screenshots/` (dev) ou na pasta de imagens do
   usuário (instalado), JPEG 1080p, com atalho para abrir a pasta.
-- **Bandeja + Controle rápido** — o ícone da bandeja abre um painel retangular
-  em formato de controle que aparece com animação junto ao ícone (teclas de
-  sistema, direcional em cruz, volume/canais e atalhos: Captura, Apps,
-  Espelhar, App completo e Sair do tclcast), arrastável e sempre por cima;
-  menu curto com *Controle rápido*, *Abrir o app completo*, *Configurações* e
-  *Sair*.
+- **Controle rápido** — atalho para controles resumidos que conseguem ser acessados no icone da barra de tarefas
 - **Início automático** — opção nas Configurações (engrenagem) para abrir junto
   com o sistema, já na bandeja.
 - **Multprotocolo** — TVs TCL (protocolo próprio), qualquer TV **DLNA**, e **Roku**
