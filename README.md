@@ -1,8 +1,16 @@
-# tclcast
+<div align="center">
+
+# TCLcast
+
+### MagiConnect for Linux
+
+![ícone do tclcast](docs/tclcast.png)
 
 Cliente **Linux** de casting para TV, reescrito a partir do app Android
 **MagiConnect / T-Cast** (`com.magiconnect.tcast` v2.0.201) através de
 engenharia reversa com REA + JADX.
+
+</div>
 
 GUI em **Python + PySide6**. Análise e spec em [`SPEC.md`](SPEC.md).
 
