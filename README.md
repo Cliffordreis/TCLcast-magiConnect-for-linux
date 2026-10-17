@@ -46,27 +46,29 @@ GUI em **Python + PySide6**. Análise e spec em [`SPEC.md`](SPEC.md).
 - TV na mesma rede do PC.
 - Para DLNA: TV com "DLNA renderer"/"Screen sharing" ativado.
 
-## Instalação
+## Baixar
 
-Pacote único para Linux x86_64 (gerado em `dist/`):
+O pacote `.deb` mais recente está nos **Releases**:
+https://github.com/Cliffordreis/TCLcast-magiConnect-for-linux-/releases
 
-| pacote | instalação |
-| --- | --- |
-| `tclcast_1.0.3_amd64.deb` | `sudo apt install ./tclcast_1.0.3_amd64.deb` |
+Baixe o `tclcast_1.0.3_amd64.deb` e instale:
+
+```bash
+sudo apt install ./tclcast_1.0.3_amd64.deb
+```
 
 - Ubuntu / Zorin / Debian 11+ — o pacote já traz Python, PySide6 e ffmpeg
   embutidos (nada a instalar depois).
-- Instala em `/opt/tclcast` e cria o atalho e o ícone "tclcast" no menu de
-  aplicativos; desinstala com `sudo apt remove tclcast`.
+- Instala em `/opt/tclcast`, cria o atalho no menu de aplicativos e o autostart
+  em `~/.config/autostart/`; desinstala com `sudo apt remove tclcast`.
 
-Ao abrir: **Configurações** (engrenagem) → *Iniciar junto com o computador (na
-bandeja)* e *Continuar na bandeja ao fechar a janela*. Ao clicar no ícone da
-bandeja, o **Controle rápido** aparece com animação junto ao ícone — painel
-retangular em formato de controle (teclas de sistema, direcional em cruz,
-volume/canais e atalhos: Captura, Apps, Espelhar, App completo e Sair do
-tclcast), arrastável e sempre por cima. O **X da janela encerra o app** — para
-ele continuar na bandeja ao fechar, marque a opção nas Configurações (para
-encerrar de vez, use "Sair" no menu do ícone ou no próprio painel).
+Fluxo: abra o app → **Configurações** (engrenagem) → *Iniciar junto com o
+computador (na bandeja)*. O **X da janela encerra o app** — para ele seguir na
+bandeja ao fechar, marque *Continuar na bandeja ao fechar a janela* nas
+Configurações. Ao clicar no ícone da bandeja, o **Controle rápido** aparece com
+animação junto ao ícone — painel em formato de controle (teclas de sistema,
+direcional em cruz, volume/canais e atalhos: Captura, Apps, Espelhar, App
+completo e Sair do tclcast), arrastável e sempre por cima.
 
 Fluxo: **Procurar TVs** → selecione o dispositivo → conecte → use o remote,
 o player, o campo de texto, **Enviar arquivos…** (fila) ou "Apps da TV".
@@ -168,8 +170,3 @@ Verificado manualmente e via varredura automatizada antes da publicação:
 - Nenhum hostname, MAC address ou identificador de dispositivo
 - `dist/`, `packaging/cache/`, `.venv/` e `squashfs-root/` ignorados via
   `.gitignore` (artefatos de build binários)
-
-## Uso responsável
-
-Analisei e reimplementei um app que você possui e tem autorização para analisar.
-Respeite os termos de serviço das TVs e dos serviços que você usar.
